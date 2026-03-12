@@ -1,0 +1,248 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 10%;
+background:#2c3e50;
+color:white;
+width: 50px;
+height : 50px;
+
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin:0 15px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.menu-btn{
+display:none;
+font-size:22px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:110vh;
+background:url("https://static.vecteezy.com/system/resources/previews/027/597/094/large_2x/cat-and-dog-paper-cutouts-on-blue-background-suitable-for-veterinary-or-animal-care-silhouette-concept-free-photo.jpg") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.btn{
+background:#f41616;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border:none;
+margin-top:10px;
+display:inline-block;
+cursor:pointer;
+}
+
+/* ABOUT */
+
+.about{
+padding:60px 10%;
+text-align:center;
+}
+
+.about-container{
+display:flex;
+gap:40px;
+align-items:center;
+margin-top:30px;
+}
+
+.about img{
+width:400px;
+border-radius:10px;
+}
+
+/* PROGRAMS */
+
+.programs{
+padding:80px 10%;
+text-align:center;
+background:#f4f4f4;
+}
+
+.program-container{
+display:flex;
+gap:25px;
+margin-top:40px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.program-card{
+background:white;
+width:300px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:all 0.3s ease;
+}
+
+/* Image style */
+
+.program-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+/* Card text */
+
+.program-card h3{
+margin:15px 0;
+font-size:22px;
+}
+
+.program-card p{
+padding:0 15px 20px;
+font-size:14px;
+color:#555;
+}
+
+/* Hover effect */
+
+.program-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* GALLERY */
+
+.gallery{
+padding:60px 10%;
+text-align:center;
+}
+
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+/* DONATE */
+
+.donate{
+padding:60px;
+text-align:center;
+background:#137880;
+color:white;
+}
+
+/* CONTACT */
+
+.contact{
+padding:60px 10%;
+text-align:center;
+}
+
+.contact form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+.contact input,
+.contact textarea{
+margin:10px 0;
+padding:12px;
+}
+
+.contact button{
+background:#2c3e50;
+color:white;
+padding:12px;
+border:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#2c3e50;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.nav-links{
+display:none;
+flex-direction:column;
+background:#2c3e50;
+position:absolute;
+top:60px;
+right:0;
+width:200px;
+}
+
+.nav-links.active{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.about-container{
+flex-direction:column;
+}
+
+.program-container{
+flex-direction:column;
+gap:20px;
+}
+
+.card{
+width:100%;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
